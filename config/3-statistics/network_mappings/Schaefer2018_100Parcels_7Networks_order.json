@@ -1,0 +1,12 @@
+{
+  "network_names_map": {
+    "Cont": "Executive Control",
+    "Default": "Default Mode",
+    "DorsAttn": "Dorsal Attention",
+    "SalVentAttn": "Ventral Attention",
+    "SomMot": "Somato-Motor",
+    "Vis": "Visual",
+    "Limbic": "Limbic"
+  },
+  "exclusion": ["Background+FreeSurfer"]
+}

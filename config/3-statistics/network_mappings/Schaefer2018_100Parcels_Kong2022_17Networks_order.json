@@ -1,0 +1,33 @@
+{
+  "network_names_map": {
+    "ContA": "ECN A",
+    "ContB": "ECN B",
+    "ContC": "ECN C",
+    "DefaultA": "DMN A",
+    "DefaultB": "DMN B",
+    "DefaultC": "DMN C",
+    "DorsAttnA": "DAN A",
+    "DorsAttnB": "DAN B",
+    "Language": "LANG",
+    "Aud": "AUD",
+    "SalVenAttnA": "VAN A",
+    "SalVenAttnB": "VAN B",
+    "SomMotA": "SMN A",
+    "SomMotB": "SMN B",
+    "VisualA": "VIS A",
+    "VisualB": "VIS B",
+    "VisualC": "VIS C"
+  },
+  "network_names_map_combined": {
+    "Cont": "Executive Control",
+    "Default": "Default Mode",
+    "DorsAttn": "Dorsal Attention",
+    "SalVenAttn": "Ventral Attention",
+    "SomMot": "Somato-Motor",
+    "Visual": "Visual",
+    "Language": "Language",
+    "Aud": "Auditory"
+  },
+  "combination_regexp": "([ABC])$",
+  "exclusion": ["Background"]
+}

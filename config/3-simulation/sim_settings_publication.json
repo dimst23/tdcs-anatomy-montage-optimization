@@ -1,0 +1,88 @@
+{
+  "simulation": {
+    "sim_type": "single",
+    "cpus": 5,
+    "fields": "eEjJ",
+    "output_path": "simulations/",
+    "map_to_surface": true,
+    "map_to_fsaverage": false,
+    "electrodes": [
+      [
+        {
+          "name": "F3",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": 1,
+          "y_direction": "CPz"
+        },
+        {
+          "name": "Fp2",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": -1,
+          "y_direction": "Fp1"
+        }
+      ],
+      [
+        {
+          "name": "P3",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": 1,
+          "y_direction": "FCz"
+        },
+        {
+          "name": "Fp2",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": -1,
+          "y_direction": "Fp1"
+        }
+      ],
+      [
+        {
+          "name": "F3",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": 1,
+          "y_direction": "CPz"
+        },
+        {
+          "name": "F4",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": -1,
+          "y_direction": "CPz"
+        }
+      ],
+      [
+        {
+          "name": "P3",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": 1,
+          "y_direction": "FCz"
+        },
+        {
+          "name": "P4",
+          "type": ["rect_5x7", "circ_1x1", "circ_5x5"],
+          "current": -1,
+          "y_direction": "FCz"
+        }
+      ]
+    ],
+    "electrode_settings": [
+      {
+        "type": "circ_1x1",
+        "shape": "ellipse",
+        "dimensions": [10, 10],
+        "thickness": [1, 1]
+      },
+      {
+        "type": "circ_5x5",
+        "shape": "ellipse",
+        "dimensions": [50, 50],
+        "thickness": [1, 1]
+      },
+      {
+        "type": "rect_5x7",
+        "shape": "rect",
+        "dimensions": [50, 70],
+        "thickness": [1, 1]
+      }
+    ]
+  }
+}

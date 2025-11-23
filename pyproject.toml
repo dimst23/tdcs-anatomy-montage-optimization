@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "tdcs-publication"
+version = "0.1.0"
+description = "Code for supporting the tDCS publication"
+authors = ["Dimitrios Stoupis <dstoupis@auth.gr>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+scipy = "^1.13.0"
+pandas = "^2.2.2"
+meshio = "^5.3.5"
+h5py = "^3.11.0"
+matplotlib = "^3.8.4"
+nibabel = "^5.2.1"
+jsonschema = "^4.22.0"
+typer = "^0.12.3"
+pydantic = "^2.7.1"
+seaborn = "^0.13.2"
+neuromaps = "^0.0.5"
+pyvista = "^0.43.10"
+shapely = "^2.0.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.1.0"
+flake8 = "^7.0.0"
+coverage = "^7.5.1"
+flake8-black = "^0.3.6"
+flake8-colors = "^0.1.9"
+mkdocs = "^1.6.0"
+mkdocstrings = "^0.25.1"
+mkdocs-material = "^9.5.21"
+pytest = "^8.2.0"
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
