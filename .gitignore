@@ -952,7 +952,6 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/python,c++,visualstudiocode,matlab,linux,windows,macos,vim,emacs,pycharm+all,visualstudio,r,rust,powershell
 
 runtime/
-data/
 temp/
 archive/
 local_scripts/
