@@ -481,6 +481,12 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# renv package management
+renv/library/
+renv/local/
+renv/staging/
+renv/python/
+
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
 /*_files/
@@ -956,5 +962,6 @@ temp/
 archive/
 local_scripts/
 config/local_temp/
+_*
 
 .vscode

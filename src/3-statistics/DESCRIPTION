@@ -1,0 +1,59 @@
+Package: tdcsStatistics
+Type: Project
+Title: tDCS Anatomy Montage Optimization - Statistical Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+    )
+Description: Statistical analysis pipeline for transcranial direct current 
+    stimulation (tDCS) anatomy-based montage optimization. Includes generalized
+    linear mixed-effects models (GLM), functional network analysis, principal
+    component analysis (PCA), and specialized morphological analyses. Supports
+    per-subject, per-parcel, and population-level analyses across multiple
+    electrode montages and simulation conditions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.0.0)
+Imports:
+    tidyverse (>= 2.0.0),
+    dplyr (>= 1.1.0),
+    tidyr (>= 1.3.0),
+    purrr (>= 1.0.0),
+    tibble (>= 3.2.0),
+    stringr (>= 1.5.0),
+    ggplot2 (>= 3.4.0),
+    jsonlite (>= 1.8.0),
+    freesurferformats (>= 0.1.17),
+    lme4 (>= 1.1-30),
+    car (>= 3.1-0),
+    emmeans (>= 1.8.0),
+    DHARMa (>= 0.4.6),
+    ggpubr (>= 0.6.0),
+    pheatmap (>= 1.0.12),
+    ggfortify (>= 0.4.16),
+    magick (>= 2.7.0),
+    fsbrain (>= 0.5.4),
+    future.apply (>= 1.10.0),
+    tictoc (>= 1.1)
+Suggests:
+    performance (>= 0.10.0),
+    report (>= 0.5.0),
+    sjPlot (>= 2.8.0),
+    flextable (>= 0.9.0),
+    reshape2 (>= 1.4.4),
+    ggh4x (>= 0.2.0),
+    egg (>= 0.4.5),
+    grid,
+    png (>= 0.1-8),
+    renv (>= 1.0.0),
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+RoxygenNote: 7.2.0
+Roxygen: list(markdown = TRUE)
+VignetteBuilder: knitr
+URL: https://github.com/yourusername/tdcs-anatomy-montage-optimization
+BugReports: https://github.com/yourusername/tdcs-anatomy-montage-optimization/issues
+
