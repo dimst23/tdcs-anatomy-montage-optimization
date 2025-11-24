@@ -486,6 +486,7 @@ renv/library/
 renv/local/
 renv/staging/
 renv/python/
+renv/
 
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
