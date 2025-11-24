@@ -3,7 +3,7 @@ Type: Project
 Title: tDCS Anatomy Montage Optimization - Statistical Analysis
 Version: 0.1.0
 Authors@R: c(
-    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+    person("Dimitrios", "Stoupis", email = "dstoupis@auth.gr", role = c("aut", "cre"))
     )
 Description: Statistical analysis pipeline for transcranial direct current 
     stimulation (tDCS) anatomy-based montage optimization. Includes generalized
@@ -11,7 +11,7 @@ Description: Statistical analysis pipeline for transcranial direct current
     component analysis (PCA), and specialized morphological analyses. Supports
     per-subject, per-parcel, and population-level analyses across multiple
     electrode montages and simulation conditions.
-License: MIT + file LICENSE
+License: MIT + CC-BY-4.0
 Encoding: UTF-8
 LazyData: true
 Depends:
@@ -54,6 +54,6 @@ Suggests:
 RoxygenNote: 7.2.0
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
-URL: https://github.com/yourusername/tdcs-anatomy-montage-optimization
-BugReports: https://github.com/yourusername/tdcs-anatomy-montage-optimization/issues
+URL: https://github.com/dimst23/tdcs-anatomy-montage-optimization
+BugReports: https://github.com/dimst23/tdcs-anatomy-montage-optimization/issues
 

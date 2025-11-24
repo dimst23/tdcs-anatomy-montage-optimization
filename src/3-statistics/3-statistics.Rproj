@@ -16,8 +16,5 @@ AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
 LineEndingConversion: Posix
 
-BuildType: None
-
-# Code style (MUST match .editorconfig)
 LineLength: 100
 TabWidth: 2
