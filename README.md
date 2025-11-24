@@ -57,6 +57,7 @@ The pipeline performs comprehensive analysis of how anatomical variability affec
 ├── assets/                              # Visualization resources
 │   └── networks/                        # Network parcellation images
 │
+├── subject_correlations.r               # Standalone correlation analysis tool (see below)
 ├── pyproject.toml                       # Python dependencies
 └── poetry.lock                          # Locked Python environment
 ```
@@ -329,6 +330,41 @@ The `data/` directory contains supplementary anatomical statistics referenced in
 - **`sample_input.csv`**: Example data format for pipeline inputs
 
 These files enable reproduction of population-level analyses without requiring access to raw imaging data.
+
+## Reproducibility Tool: Correlation Analysis
+
+The repository includes **`subject_correlations.r`**, a standalone R script for researchers to quantify relationships between PCA component loadings and morphological variables. This tool enables reproduction of the anatomical-PCA correlation analyses described in the manuscript.
+
+### Quick Start
+
+```bash
+# Basic usage with population data
+Rscript subject_correlations.r \
+  --pca pca_loadings_per_parcel.csv \
+  --input data/parcel_stats_total.fsaverage.fwhm10.Schaefer2018_500Parcels_17Networks_order.n_590.csv \
+  --type 1 \
+  --output results.csv
+```
+
+### Key Features
+
+- **Two input formats**: Population-level data (long format with `variable` and `mean` columns) or individual subject data (wide format with one column per feature)
+- **Spearman correlations**: Robust to non-normality, captures monotonic relationships
+- **Multiple testing correction**: FDR correction using Benjamini-Hochberg procedure (optional)
+- **Self-contained**: Only requires `tidyverse` R package, no other dependencies
+
+### Requirements
+
+- R 4.0+
+- `tidyverse` package: `install.packages("tidyverse")`
+
+### Documentation
+
+Complete usage instructions, examples, and interpretation guidance are provided in the supplementary materials (Section: PCA Component-Morphology Correlation Analysis). The script includes built-in help:
+
+```bash
+Rscript subject_correlations.r  # Display usage information
+```
 
 ## Output
 
